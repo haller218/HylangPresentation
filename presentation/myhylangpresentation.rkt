@@ -209,7 +209,7 @@ In Python
 
 \>>> if 2 > 3:
 \...     True
-\... else:
+\...  else:
 \...     False
 False
 
@@ -255,6 +255,24 @@ Objects?
 Meow
 # Class operation
 
+Recursion?
+# Recursion?
+
+\=> (defn fact [n]
+\...   (defn fact-aps [n acc]
+\...    (cond
+\...      [(= n 1) acc]
+\...      [True
+\...       (fact-aps (- n 1) (* acc n))]))
+\...  (fact-aps n 1))
+# DEfine function
+
+\=> (fact 5)
+120
+\=> (fact 30)
+26525285981219105...
+# Call REcursion in Hy
+
 ########### Comparation
 #####################
 
@@ -285,10 +303,31 @@ Bytecode compatible inter python files
 Meta Programing in Python
 # Meta Programing in Python
 
+Macros
+# Macros
+
+Macros?
+# Macros?
+
+\=> (defmacro simplemacro [reps]
+\...  `(print (* ~reps ~reps)))
+\=> (simplemacro 4)
+16
+# Defining a macro
+
+
+\=> (defmacro ap-map [form lst]
+\... (setv v (gensym 'v)  f (gensym 'f))
+\... `((fn []
+\...        (defn ~f [it] ~form)
+\...        (for [~v ~lst]
+\...          (yield (~f ~v))))))
+# Custom macros
 
 
 
-
+https://github.com/haller218/HylangPresentation.git
+# This apresentation
 
 https://github.com/haller218
 # My Github ><
