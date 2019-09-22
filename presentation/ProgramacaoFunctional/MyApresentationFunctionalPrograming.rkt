@@ -159,6 +159,7 @@ Que Diabos é Isso.
 \...     return num * fact ( num - 1 )
 \...
 \>>> fact ( 5 )
+120
 # Função recursiva
 
 Como funciona?
