@@ -317,7 +317,8 @@ Macros?
 
 
 \=> (defmacro ap-map [form lst]
-\... (setv v (gensym 'v)  f (gensym 'f))
+\... (setv v (gensym 'v)
+\...       f (gensym 'f))
 \... `((fn []
 \...        (defn ~f [it] ~form)
 \...        (for [~v ~lst]
@@ -326,7 +327,8 @@ Macros?
 
 
 
-https://github.com/haller218/HylangPresentation.git
+https://github.com/haller218
+/HylangPresentation.git
 # This apresentation
 
 https://github.com/haller218
